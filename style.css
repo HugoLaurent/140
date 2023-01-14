@@ -1,0 +1,116 @@
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    margin-bottom: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+
+  header img {
+    width: 30vw;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-transform: uppercase;
+  }
+  
+  ol {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #00acee;
+  }
+
+  ol:hover {
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px #00acee;
+  }
+  
+
+  .mainContainer {
+    display: flex;
+  }
+
+  .logo140 {
+    width: 1000px;
+  }
+
+  .picContainer {
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .picContainer::-webkit-scrollbar{
+    display: none;
+  }
+
+  .shirt {
+    width: 20vw;
+    margin-bottom: 0;
+  }
+
+  .itemCard {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 5%;
+    align-items: center;
+  }
+
+  .descriptionItem {
+    margin-bottom: 2%;
+  }
+
+  .taille {
+    display: flex;
+    gap: 2%;
+    align-self: flex-start;
+  }
+
+  .taille > p {
+    margin-top: 0;
+    background-color: lightblue;
+    padding: 3px;
+    border: 1px solid black;
+    margin-bottom: 2%;
+  }
+
+  .spread {
+    align-self: flex-end;
+    color: whitesmoke;
+    background-color: black;
+    padding: 10px 5px;
+    border-radius: 10%;
+    box-shadow: 1px 1px 5px #00acee;
+    margin-top: 0;
+  }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1%;
+}
+ 
+footer > * {
+  margin: 0;
+  padding: 0;
+}
+
+.logoFooter {
+  width: 10%;
+}
