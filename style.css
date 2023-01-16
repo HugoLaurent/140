@@ -7,9 +7,25 @@
 body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.waveTop{
+  position: absolute;
+  top: -100px;
+  z-index: -2;
+}
+
+.wave {
+  position: absolute;
+  bottom: -150px;
+  margin: 0px;
+  z-index: -100;
+  height: 1000px;
 }
 
 /* NAVBAR */
@@ -17,16 +33,16 @@ body {
 nav {
   text-transform: uppercase;
   font-size: 2rem;
-
   display: flex;
   justify-content: space-between;
   margin: 2rem 3rem;
+  margin-inline: 8%;
 
 }
 
 nav h1 {
   font-weight: 800;
-  text-shadow: 5px 2px 5px #00acee;
+  text-shadow: 5px 2px 5px #0099FF;
 }
 
 nav div ul {
@@ -43,6 +59,7 @@ nav div ul li:hover {
 
 main {
   display: flex;
+  flex-wrap: wrap;
   margin-inline: 5%;
   gap: 50px;
 }
@@ -50,11 +67,16 @@ main {
 /* LEFT PART */
 
 section.logo {
-  min-width: 600px;
+  max-width: 600px;
+  margin-top: 10%;
 }
 
 .logo img {
   max-width: 100%;
+}
+
+.twitter-timeline img {
+  display: none;
 }
 
 /* RIGHT PART */
@@ -64,7 +86,8 @@ main section.right {
   flex-wrap: wrap;
   gap: 15px;
   overflow: scroll;
-  height: 80vh;
+  height: 83vh;
+  width: 100vh;
   scrollbar-width: none;
   overflow-x: hidden;
 }
@@ -76,10 +99,11 @@ main section.right {
 main section article {
   display: flex;
   flex-direction: column;
-  border: 1px solid #00acee;
+  border: 1px solid #0099FF;
   border-radius: 10px;
   padding: 10px;
   width: 300px;
+  margin-bottom: 10px;
 }
 
 main section article p {
@@ -105,9 +129,11 @@ main section img {
 /* FOOTER */
 
 footer {
+  align-self: initial;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 225px;
 }
 
 .imageFooter {
